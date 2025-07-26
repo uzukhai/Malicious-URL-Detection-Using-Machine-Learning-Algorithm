@@ -1,0 +1,157 @@
+html {
+    height: 100%; /* Ensures the page takes full height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url('image/back.gif');
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+
+    border-top: white 2px dashed;
+    border-right: white 2px dashed;
+    border-left: white 2px dashed;
+    margin: 0;
+    text-shadow:
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}
+
+.head {
+    background-color: rgba(152, 245, 249, 0.5);
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 0%;
+    padding: 2% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 5px solid black;
+
+    width: 70%;
+    height: 200px;
+    animation: animate 2s forwards;
+}
+/*
+@keyframes animate {
+    to {
+        width: 100%;
+        height: 200px;
+    }
+}*/
+
+.results {
+    text-align: center;
+    color: white;
+    font-family: 'Genshin', sans-serif;
+}
+
+.results h1 {
+    font-size: 200%;
+}
+
+.content {
+    /*background-color: rgba(152, 245, 249, 0.5);*/
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 500px;
+    padding: 2% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    /*border: 5px solid black;*/
+
+    width: 25%;
+    height: 100px;
+}
+
+form {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    font-family: 'Genshin';
+
+    width: 70%;
+}
+
+.url {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid black;
+}
+
+.url:hover {
+    background-color: #E7E7E7;
+    color: white;
+}
+
+.submit {
+    width: 100%;
+    max-width: 250px;
+}
+
+.submit:hover {
+    background-color: gray;
+    color: white;
+}
+
+input[type=submit]{
+    font-family: 'Genshin';
+    border-color: black;
+}
+
+.button {
+    background-color: rgba(152, 245, 249, 0.5);
+    color: white;
+    font-family: 'Genshin', sans-serif;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 75%;
+    box-shadow: 7px 7px rgb(0, 0, 0, 0.7);
+}
+
+.button:hover {
+    background-color: rgba(25, 125, 119, 0.5);
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 9px 9px rgba(0, 0, 0, 1);
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Genshin';
+    margin: 0;
+    padding: 10px;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+
+    border: white 2px dashed;
+}
+
+@font-face {
+    font-family: 'Genshin';
+    src: url('font/genshin.ttf') format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
